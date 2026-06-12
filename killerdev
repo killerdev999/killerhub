@@ -17,24 +17,8 @@ local ScriptsPrincipal = {
     {Nome = "Nameless Admin (Universal)", URL = "https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source", UsarTrue = false},
     {Nome = "Fly Gui v3 (Universal)", URL = "https://rawscripts.net/raw/Universal-Script-Fly-gui-v3-78856", UsarTrue = false},
     {Nome = "Zenith Hub (Fish/The Forge)", URL = "https://zenithhub.cloud/panel/script", UsarTrue = false},
-    {Nome = "Universal Farm Hub Mobile (Jailbreak)", URL = "https://raw.githubusercontent.com/BlitzIsKing/UniversalFarm/main/Loader/Regular", UsarTrue = false},
-    {Nome = "Zephyr Hub (Hypershot)", URL = "https://raw.githubusercontent.com/TheRealAvrwm/Zephyr-V2/refs/heads/main/Hypershot.lua", UsarTrue = true},
-    {Nome = "Argon Hub X (Blade Ball)", URL = "https://rawscripts.net/raw/Universal-Script-Argon-Hub-X-Blade-Ball-OP-50392", UsarTrue = false},
-    {Nome = "Redz Hub (Blox Fruits)", URL = "https://raw.githubusercontent.com/luraobermeyer-jpg/redzhub/refs/heads/main/redzhub.lua.txt", UsarTrue = false},
-    {Nome = "Onion Hub PVP (Blox Fruits)", URL = "https://raw.githubusercontent.com/onion132005-bit/esponion.lua/refs/heads/main/onion13v4.lua", UsarTrue = false},
-    {Nome = "Driving Empire (Pc/Mobile)", URL = "https://raw.githubusercontent.com/Marco8642/science/main/drivingempire", UsarTrue = true},
-    {Nome = "Ekuve Hub (Fuja do tsunami para brainrot)", URL = "https://rawscripts.net/raw/RIVALS-BEST-SCRIPT-Ekuve-hub-77255", UsarTrue = false},
-    {Nome = "Rubi Hub (Mad City)", URL = "https://raw.githubusercontent.com/AdminEvilDRagon/RubyHub-V2-Chapter-2/refs/heads/main/RubyHub%20V2%20Chapter2%20.lua", UsarTrue = false},
-    {Nome = "Thegxx Hub (Counter Blox)", URL = "https://rawscripts.net/raw/Counter-Blox-No-key-Thegxx-62079", UsarTrue = false},
-    {Nome = "Kron Hub (Lumber Tycoon 2)", URL = "https://rawscripts.net/raw/Lumber-Tycoon-2-Kron-Hub-20796", UsarTrue = false},
-    {Nome = "Auto Bonds (Dead Rails)", URL = "https://rawscripts.net/raw/Dead-Rails-Beta-bonds-88006", UsarTrue = false},
-    {Nome = "Kayla Hub (99 nights)", URL = "https://rawscripts.net/raw/99-Nights-in-the-Forest-KaylaHub-Keyless-OP-65968", UsarTrue = false},
-    {Nome = "Zeck hub (Lendas do Voleibol)", URL = "https://raw.githubusercontent.com/scriptshubzeck/Zeckhubv1/refs/heads/main/zeckhub", UsarTrue = false},
-    {Nome = "Redz Hub (Meme Sea)", URL = "https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau", UsarTrue = false, Especial = true},
-    {Nome = "Vylik Hub (One Block)", URL = "https://rawscripts.net/raw/ONE-BLOCK-OP-KEYLESS-SCRIPT-One-Block-51618", UsarTrue = false},
-    {Nome = "Pizza Hub (One Block)", URL = "https://rawscripts.net/raw/ONE-BLOCK-pizza-hub-105652", UsarTrue = false},
-    {Nome = "Enchanted Hub (Lendas da Velocidade)", URL = "https://rawscripts.net/raw/Legends-Of-Speed-Enchanted-Hub-43785", UsarTrue = false},
-    {Nome = "Coquette Hub (Brookhaven)", URL = "https://raw.githubusercontent.com/Daivd977/Coquettekk/refs/heads/main/play", UsarTrue = false}
+    {Nome = "Coquette Hub (Brookhaven)", URL = "https://raw.githubusercontent.com/Daivd977/Coquettekk/refs/heads/main/play", UsarTrue = false},
+    {Nome = "Universal Farm Hub Mobile (Jailbreak)", URL = "https://raw.githubusercontent.com/BlitzIsKing/UniversalFarm/main/Loader/Regular", UsarTrue = false}
 }
 
 local function carregarAimbot() loadstring(game:HttpGet("https://pastebin.com/raw/N0LZ0tWJ"))() end
