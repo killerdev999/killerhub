@@ -1,14 +1,9 @@
--- =======================================================================
--- INICIALIZAÇÃO SEGURA PARA DELTA EXECUTOR
--- =======================================================================
+
 if not game:IsLoaded() then game.Loaded:Wait() end
 
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
--- =======================================================================
--- KEYS
--- =======================================================================
 local SISTEMA_DE_KEYS = {
     ["99"] = { Tipo = "LIFETIME" },
     ["PREMIUM_988"] = { Tipo = "LIFETIME" },
@@ -18,9 +13,6 @@ local SISTEMA_DE_KEYS = {
 local LINK_KEY = "https://killer-main.vercel.app"
 local DISCORD_DONO = "Peça uma Key pro dono no discord: killer_exp"
 
--- =======================================================================
--- SCRIPTS ABA PRINCIPAL
--- =======================================================================
 local ScriptsPrincipal = {
     {Nome = "Nameless Admin (Universal)", URL = "https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source", UsarTrue = false},
     {Nome = "Fly Gui v3 (Universal)", URL = "https://rawscripts.net/raw/Universal-Script-Fly-gui-v3-78856", UsarTrue = false},
@@ -45,9 +37,6 @@ local ScriptsPrincipal = {
     {Nome = "Coquette Hub (Brookhaven)", URL = "https://raw.githubusercontent.com/Daivd977/Coquettekk/refs/heads/main/play", UsarTrue = false}
 }
 
--- =======================================================================
--- FUNÇÕES DOS BOTÕES DE SCRIPTS
--- =======================================================================
 local function carregarAimbot() loadstring(game:HttpGet("https://pastebin.com/raw/N0LZ0tWJ"))() end
 local function carregarEsp() loadstring(game:HttpGet("https://pastebin.com/raw/f9fxwkN4"))() end
 local function carregarWaypoint() loadstring(game:HttpGet("https://pastebin.com/raw/jXL7tXsY"))() end
@@ -55,9 +44,6 @@ local function carregarTeleporte() loadstring(game:HttpGet("https://pastebin.com
 local function carregarBring() loadstring(game:HttpGet("https://pastebin.com/raw/JUxhhkp9"))() end
 local function carregarKillerX() loadstring(game:HttpGet("https://pastebin.com/raw/xFy1LbBf"))() end
 
--- =======================================================================
--- DEFINE ONDE A INTERFACE VAI FICAR (OTIMIZADO PARA DELTA)
--- =======================================================================
 local GuiParent
 pcall(function()
     -- gethui() é a forma nativa que o Delta e outros mobiles usam para proteger a GUI
@@ -75,9 +61,6 @@ pcall(function()
     end
 end)
 
--- =======================================================================
--- CRIAÇÃO DA UI PRINCIPAL
--- =======================================================================
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "KillerHubSystem"
 ScreenGui.ResetOnSpawn = false
@@ -93,9 +76,6 @@ MainFrame.Active = true
 MainFrame.Draggable = true
 MainFrame.Parent = ScreenGui
 
--- =======================================================================
--- BOTÃO CIRCULAR K PARA OCULTAR/MOSTRAR
--- =======================================================================
 local ToggleButton = Instance.new("TextButton")
 ToggleButton.Name = "ToggleButton"
 ToggleButton.Size = UDim2.new(0, 45, 0, 45)
@@ -123,7 +103,6 @@ ToggleButton.MouseButton1Click:Connect(function()
     MainFrame.Visible = not MainFrame.Visible
 end)
 
--- Textos e Cabeçalho
 local TitleBox = Instance.new("TextLabel")
 TitleBox.Size = UDim2.new(0, 95, 0, 25)
 TitleBox.Position = UDim2.new(0, 12, 0, 12)
@@ -136,7 +115,6 @@ TitleBox.TextSize = 13
 TitleBox.Font = Enum.Font.SourceSansBold
 TitleBox.Parent = MainFrame
 
--- BARRA DE PESQUISA
 local SearchBox = Instance.new("TextBox")
 SearchBox.Size = UDim2.new(0, 130, 0, 25)
 SearchBox.Position = UDim2.new(0.5, -65, 0, 12)
@@ -197,9 +175,6 @@ FooterRightButton.MouseButton1Click:Connect(function()
     end
 end)
 
--- ==========================================
--- SISTEMA DE KEY
--- ==========================================
 local KeyContainer = Instance.new("Frame")
 KeyContainer.Size = UDim2.new(1, 0, 1, 0)
 KeyContainer.BackgroundTransparency = 1
@@ -266,9 +241,6 @@ GetKeyButton.MouseButton1Click:Connect(function()
     end
 end)
 
--- ==========================================
--- SISTEMA DE ABAS (HUB)
--- ==========================================
 local HubContainer = Instance.new("Frame")
 HubContainer.Size = UDim2.new(1, 0, 1, 0)
 HubContainer.BackgroundTransparency = 1
@@ -320,7 +292,6 @@ PageScripts.ScrollBarThickness = 4
 PageScripts.Visible = true
 PageScripts.Parent = ContentArea
 
--- Tabela para armazenar os botões e facilitar a pesquisa
 local BotoesPrincipal = {}
 
 local posicaoY = 5
@@ -362,7 +333,6 @@ for _, info in ipairs(ScriptsPrincipal) do
 end
 PageScripts.CanvasSize = UDim2.new(0, 0, 0, posicaoY)
 
--- LÓGICA DO FILTRO DE PESQUISA
 SearchBox:GetPropertyChangedSignal("Text"):Connect(function()
     local textoPesquisa = string.lower(SearchBox.Text)
     local posYAtual = 5
@@ -508,9 +478,6 @@ ValidarButton.MouseButton1Click:Connect(function()
     end
 end)
 
--- =======================================================================
--- SISTEMA DE NOTIFICAÇÃO
--- =======================================================================
 local function EnviarNotificacao(titulo, texto)
     task.spawn(function()
         local TweenService = game:GetService("TweenService")
@@ -568,7 +535,7 @@ local function EnviarNotificacao(titulo, texto)
         IconText.Font = Enum.Font.SourceSansBold
         IconText.Parent = IconBg
         
-        -- Textos da Notificação
+        
         local TitleLbl = Instance.new("TextLabel")
         TitleLbl.Size = UDim2.new(0, 200, 0, 20)
         TitleLbl.Position = UDim2.new(0, 75, 0, 15)
@@ -593,7 +560,6 @@ local function EnviarNotificacao(titulo, texto)
         DescLbl.TextWrapped = true
         DescLbl.Parent = NotifFrame
         
-        -- Entrada
         local tweenIn = TweenService:Create(NotifFrame, TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {Position = UDim2.new(1, -320, 1, -120)})
         tweenIn:Play()
         
@@ -608,7 +574,4 @@ local function EnviarNotificacao(titulo, texto)
     end)
 end
 
--- =======================================================================
--- Chamar notificação
--- =======================================================================
 EnviarNotificacao("KILLER HUB", "Obrigado por usar o KILLER HUB!")
