@@ -6,7 +6,6 @@ local LocalPlayer = Players.LocalPlayer
 
 local SISTEMA_DE_KEYS = {
     ["99"] = { Tipo = "LIFETIME" },
-    ["PREMIUM_988"] = { Tipo = "LIFETIME" },
     ["INDEFINIDA"] = { Tipo = "TEMPO", Segundos = 60 }
 }
 
@@ -19,7 +18,10 @@ local ScriptsPrincipal = {
     {Nome = "Zenith Hub (Fish/The Forge)", URL = "https://zenithhub.cloud/panel/script", UsarTrue = false},
     {Nome = "Coquette Hub (Brookhaven)", URL = "https://raw.githubusercontent.com/Daivd977/Coquettekk/refs/heads/main/play", UsarTrue = false},
     {Nome = "Universal Farm Hub Mobile (Jailbreak)", URL = "https://raw.githubusercontent.com/BlitzIsKing/UniversalFarm/main/Loader/Regular", UsarTrue = false},
-    {Nome = "Achaotic Hub (Blade Ball)", URL = "https://raw.githubusercontent.com/AchaoticSoftworksCore/AchaoticSources/refs/heads/main/BladeBall/Main.luau", UsarTrue = false}
+    {Nome = "Achaotic Hub (Blade Ball)", URL = "https://raw.githubusercontent.com/AchaoticSoftworksCore/AchaoticSources/refs/heads/main/BladeBall/Main.luau", UsarTrue = false},
+    {Nome = "Kron Hub (Lumber Tycoon 2)", URL = "https://rawscripts.net/raw/Lumber-Tycoon-2-Kron-Hub-20796", UsarTrue = false},
+    {Nome = "Pizza Hub (One Block)", URL = "https://rawscripts.net/raw/ONE-BLOCK-pizza-hub-105652", UsarTrue = false},
+    {Nome = "Vylik Hub (One Block)", URL = "https://rawscripts.net/raw/ONE-BLOCK-OP-KEYLESS-SCRIPT-One-Block-51618", UsarTrue = false}
 }
 
 local function carregarAimbot() loadstring(game:HttpGet("https://pastebin.com/raw/N0LZ0tWJ"))() end
