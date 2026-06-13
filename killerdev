@@ -21,7 +21,10 @@ local ScriptsPrincipal = {
     {Nome = "Achaotic Hub (Blade Ball)", URL = "https://raw.githubusercontent.com/AchaoticSoftworksCore/AchaoticSources/refs/heads/main/BladeBall/Main.luau", UsarTrue = false},
     {Nome = "Kron Hub (Lumber Tycoon 2)", URL = "https://rawscripts.net/raw/Lumber-Tycoon-2-Kron-Hub-20796", UsarTrue = false},
     {Nome = "Pizza Hub (One Block)", URL = "https://rawscripts.net/raw/ONE-BLOCK-pizza-hub-105652", UsarTrue = false},
-    {Nome = "Vylik Hub (One Block)", URL = "https://rawscripts.net/raw/ONE-BLOCK-OP-KEYLESS-SCRIPT-One-Block-51618", UsarTrue = false}
+    {Nome = "Vylik Hub (One Block)", URL = "https://rawscripts.net/raw/ONE-BLOCK-OP-KEYLESS-SCRIPT-One-Block-51618", UsarTrue = false},
+    {Nome = "Enchanted Hub (Lendas da Velocidade)", URL = "https://rawscripts.net/raw/Legends-Of-Speed-Enchanted-Hub-43785", UsarTrue = false},
+    {Nome = "Zeck Hub (Lendas do Voleibol)", URL = "https://raw.githubusercontent.com/scriptshubzeck/Zeckhubv1/refs/heads/main/zeckhub", UsarTrue = false},
+    {Nome = "Redz Hub (Meme Sea)", URL = "https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau", UsarTrue = false}
 }
 
 local function carregarAimbot() loadstring(game:HttpGet("https://pastebin.com/raw/N0LZ0tWJ"))() end
