@@ -11,7 +11,7 @@ ______________________________________________________________
 | Version: Beta  |  Last Update: 26-06-2026  | By: KILLER ]]
 
 
-local CORRECT_KEY = "KL-ZGT3-H56N-LVP8"
+local CORRECT_KEY = "KL-V7Y3-H568-LVN8"
 
 local CoreGui = game:GetService("CoreGui")
 local Players = game:GetService("Players")
